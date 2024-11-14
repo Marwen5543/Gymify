@@ -1,0 +1,87 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="400dp"
+    android:viewportWidth="200"
+    android:viewportHeight="400">
+
+    <!-- Black background -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,0 L200,0 L200,400 L0,400 Z"/>
+
+    <!-- First set of connected triangles -->
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M20,380 L60,300 L100,380 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M30,370 L70,290 L110,370 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="1.5"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M40,360 L80,280 L120,360 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M50,350 L90,270 L130,350 Z"/>
+
+    <!-- Second set of connected triangles -->
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M120,280 L160,200 L200,280 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M130,270 L170,190 L210,270 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="1.5"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M140,260 L180,180 L220,260 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M150,250 L190,170 L230,250 Z"/>
+
+    <!-- Third set of connected triangles -->
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M60,180 L100,100 L140,180 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M70,170 L110,90 L150,170 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="1.5"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M80,160 L120,80 L160,160 Z"/>
+
+    <path
+        android:strokeColor="#7F00FF00"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M90,150 L130,70 L170,150 Z"/>
+
+</vector>

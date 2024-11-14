@@ -1,0 +1,16 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/CandidatPlans">
+
+    <fragment
+        android:id="@+id/CandidatPlans"
+        android:name="com.example.mobileproject.CandidatPlans" />
+    <fragment
+        android:id="@+id/MealTracking"
+        android:name="com.example.mobileproject.MealTracking" />
+
+    <action
+        android:id="@+id/action_CandidatPlans_to_MealTracking"
+        app:destination="@id/MealTracking" />
+
+</navigation>

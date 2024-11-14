@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background"
+    tools:context=".MealFormFragment"
+    android:id="@+id/plansFragment"
+    >
+
+    <!-- Back Button -->
+
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginTop="100dp">
+
+            <!-- Week and Day Inputs -->
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_background"
+                android:contentDescription="Back Button"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="16dp"
+                android:text="Prepare the Meals"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/week_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Week"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/day_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:hint="Day"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Breakfast Card -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/breakfast_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="visible"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/breakfast_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Meal Name"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/breakfast_recipe_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Recipe"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/breakfast_calories_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Calories"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/breakfast_time_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Time"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/validate_breakfast_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/check"
+                    android:contentDescription="validate Button"
+                    app:tint="#B6EC57"
+                    android:layout_marginStart="250dp" />
+            </LinearLayout>
+
+            <!-- Lunch Card -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunch"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/lunch_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/lunch_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Meal Name"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/lunch_recipe_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Recipe"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/lunch_calories_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Calories"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/lunch_time_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Time"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/validate_lunch_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/check"
+                    android:contentDescription="validate Button"
+                    app:tint="#B6EC57"
+                    android:layout_marginStart="250dp" />
+            </LinearLayout>
+
+            <!-- Snack Card -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snack"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/snack_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/snack_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Meal Name"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/snack_recipe_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Recipe"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/snack_calories_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Calories"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/snack_time_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Time"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/validate_snack_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/check"
+                    android:contentDescription="validate Button"
+                    app:tint="#B6EC57"
+                    android:layout_marginStart="250dp" />
+            </LinearLayout>
+
+            <!-- Dinner Card -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/dinner_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/dinner_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Meal Name"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/dinner_recipe_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Recipe"
+                    android:textColorHint="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/dinner_calories_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Calories"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/dinner_time_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Time"
+                        android:textColorHint="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/validate_dinner_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/check"
+                    android:contentDescription="validate Button"
+                    app:tint="#B6EC57"
+                    android:layout_marginStart="250dp" />
+            </LinearLayout>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Meals"
+                android:enabled="true"
+                android:clickable="true"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MobileProject</string>
+    <string name="facebook_app_id">523832977199318</string>
+    <string name="facebook_client_token">056f66ba67d9380beed59434d8a7dc91</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

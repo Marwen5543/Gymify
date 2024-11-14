@@ -1,0 +1,193 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="#292929"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Day Title and More Button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="37dp"
+                android:layout_height="31dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_background"
+                android:contentDescription="Calendar Button"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/more_button" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1800 kcal"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Detailed Meal List -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Breakfast Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:id="@+id/breakfast_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_breakfast"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/breakfast_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Breakfast Dishes -->
+            <TextView
+                android:id="@+id/breakfast_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salad with eggs\n• Vegetables"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Lunch Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/lunch_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_lunch"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/lunch_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Lunch Dishes -->
+            <TextView
+                android:id="@+id/lunch_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Soup with cheese\n• Chicken breast\n• Salad"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/snack_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/fruit"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/snack_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snack"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Dinner Dishes -->
+            <TextView
+                android:id="@+id/snack_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fruits\n• Vegetables"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp" />
+
+
+            <!-- Dinner Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/dinner_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_dinner"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/dinner_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinner"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Dinner Dishes -->
+            <TextView
+                android:id="@+id/dinner_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fruits\n• Vegetables"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
